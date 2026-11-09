@@ -1,2 +1,0 @@
-s1 https://elevenlabsusercontent.com/database/workspace/9552a16d00ab4d83b77f95dee02a7892/content_generation/QxjOqvteAPVcb3tmIIIJ/9bp4EdVEPhfdpQS5ljCP/content.mp3?Expires=1794222000&KeyName=assets-cdn-key-1&Signature=FZTunzykhowzAwwZSRXY52NCTmc=
-s2 https://elevenlabsusercontent.com/database/workspace/9552a16d00ab4d83b77f95dee02a7892/content_generation/40qlJ84zcoJgmzkz3IyZ/gCKOr7KcoGI9LgzK7FFz/content.mp3?Expires=1794222000&KeyName=assets-cdn-key-1&Signature=Nd1risvIHjrACmG0nFdaXcffWj0=
