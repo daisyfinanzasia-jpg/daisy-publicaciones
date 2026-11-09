@@ -1,0 +1,27 @@
+name: traer-audios
+on:
+  workflow_dispatch:
+  push:
+    paths: ['trabajo/urls-audio.txt']
+permissions:
+  contents: write
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar audios
+        run: |
+          mkdir -p trabajo/audio-quincena
+          while read id url; do
+            [ -z "$id" ] && continue
+            curl -sSfL -o "trabajo/audio-quincena/b${id}.mp3" "$url"
+          done < trabajo/urls-audio.txt
+          ls -la trabajo/audio-quincena
+      - name: Guardar
+        run: |
+          git config user.name "daisyfinanzasia-jpg"
+          git config user.email "daisyfinanzasia@gmail.com"
+          git add trabajo/audio-quincena
+          git commit -m "Temporal: audios de la quincena" || echo nada
+          git push
